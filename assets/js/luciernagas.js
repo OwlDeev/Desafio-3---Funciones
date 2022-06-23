@@ -7,6 +7,11 @@ var dot = document.getElementsByClassName("dot");
 var labelLuciernagas = document.getElementById("labelLuciernagas");
 var activeLuciernagasDiv = document.getElementById("activeLuciernagasDiv");
 var restartArrow = document.getElementById("restartArrow");
+var body = document.body;
+body.style.backgroundImage = "url('assets/imgs/fondoPintarHtml.jpg')";
+body.style.backgroundRepeat = "no-repeat";
+body.style.backgroundAttachment = "fixed";
+body.style.backgroundPosition = "center";
 
 function visibleDot() {
   for (var i=1;i<dot.length;i++){
