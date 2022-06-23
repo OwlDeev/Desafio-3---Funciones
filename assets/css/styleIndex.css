@@ -1,0 +1,77 @@
+.containerChallenge {
+  padding: 50px;
+}
+
+body {
+  height: 100vh;
+  color: white;
+}
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e5574;
+}
+
+footer {
+  background-color: #1e5574;
+}
+
+footer h4 {
+  padding: 10px;
+  font-size: 15px;
+}
+
+#titleH1 {
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+}
+
+.card-title {
+  color: #1e5574;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#imgLogo {
+  width: 160px;
+  height: 50px;
+  padding-left: 30px;
+}
+
+.colorIcon {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+h5 {
+  color: #000000;
+}
+
+.inputNumeros {
+  width: 50%;
+  margin-left: 10px;
+}
+
+.textBlack {
+  color: #000000;
+}
+
+.sumaText {
+  padding-left: 8px;
+}
+
+#sumaTotalLabel {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#sumaTotalLabel2 {
+  font-size: 20px;
+  font-weight: bold;
+}

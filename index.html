@@ -1,77 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/styleIndex.css" />
     <title>Desafio - Funciones</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="d-flex justify-content-between" id="titleDiv">
-        <a href="index.html"><img id="imgLogo" src="assets/imgs/logoDesafioLatam.png" alt="logoPortafolio"></a>
-        <h1 id="titleH1">Desafio - Funciones</h1>
-        <div>
-            <a href="http://narkistudio.com" target="_blank"><i class="bi bi-globe colorIcon"></i></a>
-            <a href="https://www.linkedin.com/in/alfonso-sandoval-del-pino-7aaa361a7/" target="_blank"><i class="bi bi-linkedin colorIcon"></i></a>
-            <a href="https://github.com/OwlDeev?tab=repositories" target="_blank"><i class="bi bi-github colorIcon"></i></a>
-            
-        </div>
+      <a href="index.html"
+        ><img
+          id="imgLogo"
+          src="assets/imgs/logoDesafioLatam.png"
+          alt="logoPortafolio"
+      /></a>
+      <h1 id="titleH1">Desafio - Funciones</h1>
+      <div>
+        <a href="http://narkistudio.com" target="_blank"
+          ><i class="bi bi-globe colorIcon"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/alfonso-sandoval-del-pino-7aaa361a7/"
+          target="_blank"
+          ><i class="bi bi-linkedin colorIcon"></i
+        ></a>
+        <a href="https://github.com/OwlDeev?tab=repositories" target="_blank"
+          ><i class="bi bi-github colorIcon"></i
+        ></a>
+      </div>
     </header>
     <div class="containerChallenge">
-        <div class="d-flex justify-content-around">
-            <div class="row row-cols-1 row-cols-md-3 g-5">
-                <div class="col">
-                  <div class="card">
-                    <img src="assets/imgs/ejercicio1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <center>
-                            <h5 class="card-title">1 - Funcion</h5>
-                        </center>
-                    </div>
-                  </div>
+      <div class="d-flex justify-content-around">
+        <div class="row row-cols-1 row-cols-md-3 g-5">
+          <div class="col">
+            <div class="card">
+              <img
+                src="assets/imgs/ejercicio1.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <center>
+                  <h5 class="card-title">1 - Funcion</h5>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo"
+                  >
+                    EJERCICIO
+                  </button>
+                </center>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 1 -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <label for="" style="color: rgb(0, 0, 0)"
+                    >Aplicacion en base a la funcion</label
+                  >
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="assets/imgs/ejercicio2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <center>
-                            <h5 class="card-title">2 - Arrow</h5>
-                        </center>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-evenly textBlack">
+                        <label for="">Numero 1</label>
+                        <label for="">Numero 2</label>
+                        <label for="">Numero 3</label>
+                      </div>
+                      <div class="d-flex justify-content-evenly textBlack">
+                        <input
+                          id="inputNumero1"
+                          class="inputNumeros"
+                          type="number"
+                          min="0"
+                          value="0"
+                        />
+                        <label class="sumaText">+</label>
+                        <input
+                          id="inputNumero2"
+                          class="inputNumeros"
+                          type="number"
+                          min="0"
+                          value="0"
+                        />
+                        <label class="sumaText">+</label>
+                        <input
+                          id="inputNumero3"
+                          class="inputNumeros"
+                          type="number"
+                          min="0"
+                          value="0"
+                        />
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="assets/imgs/ejercicio3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <center>
-                            <h5 class="card-title">3 - Pintar.html</h5>
-                        </center>
-                    </div>
-                  </div>
-                </div>
-                <div class="col">
-                  <div class="card">
-                    <img src="assets/imgs/ejercicio4.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <center>
-                            <h5 class="card-title">4 - Ejercicio4.html</h5>
-                        </center>
-                    </div>
-                  </div>
+                <center>
+                  <label id="sumaTotalLabel" class="textBlack"></label>
+                </center>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="validarButton1"
+                  >
+                    Validar
+                  </button>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="assets/imgs/ejercicio2.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <center>
+                  <h5 class="card-title">2 - Arrow</h5>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2"
+                    data-bs-whatever="@mdo"
+                  >
+                    EJERCICIO
+                  </button>
+                </center>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal 2 -->
+          <div
+            class="modal fade"
+            id="exampleModal2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <label for="" style="color: rgb(0, 0, 0)"
+                    >Aplicacion en base a la funcion</label
+                  >
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="mb-3">
+                      <div class="d-flex justify-content-evenly textBlack">
+                        <label for="">Numero 1</label>
+                        <label for="">Numero 2</label>
+                      </div>
+                      <div class="d-flex justify-content-evenly textBlack">
+                        <input
+                          id="inputNumero4"
+                          class="inputNumeros"
+                          type="number"
+                          min="0"
+                          value="0"
+                        />
+                        <label class="sumaText">+</label>
+                        <input
+                          id="inputNumero5"
+                          class="inputNumeros"
+                          type="number"
+                          min="0"
+                          value="0"
+                        />
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <center>
+                  <label id="sumaTotalLabel2" class="textBlack"></label>
+                </center>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    id="validarButton2"
+                  >
+                    Validar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card">
+              <img
+                src="assets/imgs/ejercicio3.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <center>
+                  <h5 class="card-title">3 - Pintar.html</h5>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="window.open('pintar.html')"
+                    target="_blank"
+                  >
+                    EJERCICIO
+                  </button>
+                </center>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="assets/imgs/ejercicio4.png"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <center>
+                  <h5 class="card-title">4 - Ejercicio4.html</h5>
+                </center>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <footer>
-        <center>
-            <h4>© Copyright NarkiStudio. Todo los derechos reservados</h4>
-        </center>
+      <center>
+        <h4>© Copyright NarkiStudio. Todo los derechos reservados</h4>
+      </center>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
     <script src="assets/js/1 funcion.js"></script>
     <script src="assets/js/2 arrow.js"></script>
-</body>
+  </body>
 </html>
