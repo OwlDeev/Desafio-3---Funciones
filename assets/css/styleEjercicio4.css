@@ -1,0 +1,178 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/imgs/fondoEjercicio4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Bebas Neue', cursive;
+}
+
+#divCards{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.cards{
+    display:flex;
+    justify-content:space-between;
+    height:200px;width:200px;
+    margin:10px;
+    border-radius: 50%;
+}
+
+#card1{
+    background-color:rgb(255, 0, 0);
+    box-shadow: 0rem 1rem 2rem 1rem rgb(255, 0, 0);
+}
+
+#card2{
+    background-color:rgb(255, 0, 242);
+    box-shadow: 0rem 1rem 2rem 1rem rgb(255, 0, 242);
+}
+
+#card3{
+    background-color:rgb(0, 183, 255);
+    box-shadow: 0rem 1rem 2rem 1rem rgb(0, 183, 255);
+}
+
+#card4{
+    background-color:rgb(0, 255, 34);
+    box-shadow: 0rem 1rem 2rem 1rem rgb(0, 255, 34);
+}
+
+#simbologia{
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 500px;
+    width: 50%;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#labelTitle{
+    font-size: 80px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#labelSubTitle{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#card1{
+    background-image: url(/assets/imgs/gema1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+#card2{
+    background-image: url(/assets/imgs/gema2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+#card3{
+    background-image: url(/assets/imgs/gema3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+#card4{
+    background-image: url(/assets/imgs/gema4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.imgButtons{
+    height: 50px;
+}
+
+#divEleccion{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: row;
+    align-self: start;
+}
+
+.divSimbologia{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.divSimbologiaItem{
+    display: flex;
+    flex-direction: row;
+}
+
+.textSimbologiaItem{
+    color: antiquewhite;
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.imgSimbologiaItem{
+    height: 50px;
+    width: 30px;
+}
+
+#divChangeColor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+}
+
+#textChange{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    align-items: top;
+}
+
+.gemaSelected{
+    border-radius: 50%;
+    margin-left: 40px;
+    height: 100px;
+    width: 60px;
+    box-shadow: 0rem 1rem 2rem 1rem #ffffff;
+}
+
+.gemaSelect1{
+    background-image: url(/assets/imgs/gema2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.gemaSelect2{
+    background-image: url(/assets/imgs/gema5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
+
+.gemaSelect3{
+    background-image: url(/assets/imgs/gema6.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+}
